@@ -1,0 +1,52 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.justifyFlexEnd {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+.flexDirectionColumn {
+  flex-direction: column;
+}
+
+.flexGrow {
+  flex-grow: 1;
+}
+
+.flexDirectionRow {
+  flex-direction: row;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.alignSelfCenter {
+  align-self: center;
+}
+
+.alignItemsEnd {
+  align-items: flex-end;
+}
+
+.alignItemsStretch {
+  align-items: stretch;
+}
+
+.alignSelfStart {
+  align-self: flex-start;
+}

@@ -1,0 +1,22 @@
+@import 'colors';
+@import 'variables';
+
+html {
+  background: url(../assets/resistance-base-bg.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  @media screen and (min-width: $lg-screen) {
+    width: $container-width;
+  }
+  padding: $section-spacer-md;
+  margin: 0 auto;
+}
+
+.container {
+  background: $white;
+}

@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.header {
+  margin-bottom: $section-spacer-lg;
+
+  @media screen and (min-width: $lg-screen) {
+    grid-template-columns: auto auto;
+  }
+}
+
+.logo {
+  margin-bottom: $section-spacer-md;
+
+  @media screen and (min-width: $lg-screen) {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  color: $white;
+  border-bottom: dashed 2px $white;
+}

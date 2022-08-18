@@ -1,0 +1,13 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.card {
+  background: $white;
+  padding: $section-spacer-sm;
+  border-radius: 3px;
+}
+
+.container {
+  grid-template-columns: 50px auto 50px;
+  grid-gap: 20px;
+}

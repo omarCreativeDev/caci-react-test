@@ -1,0 +1,63 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.header {
+  @media screen and (min-width: $lg-screen) {
+    grid-template-columns: auto auto;
+  }
+}
+
+.yoda {
+  margin-left: $section-spacer-sm;
+}
+
+.list {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: $section-spacer-lg;
+  grid-template-columns: auto;
+
+  @media screen and (min-width: $md-screen) {
+    grid-template-columns: auto auto;
+  }
+}
+
+.button {
+  background: $turbo;
+  max-width: 200px;
+  margin: $section-spacer-sm 0 0;
+  padding: $section-spacer-sm $section-spacer-md;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media screen and (min-width: $lg-screen) {
+    margin-top: 0;
+  }
+
+  &:hover {
+    background: $goldTips;
+  }
+}
+
+.spinner {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spinner {
+    animation: spinner-motion infinite 20s linear;
+  }
+}
+
+@keyframes spinner-motion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
